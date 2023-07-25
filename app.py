@@ -3,7 +3,6 @@ import faulthandler
 from PIL import Image
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
@@ -15,7 +14,6 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # --- Load Assets ---
-lottie_asset1 = "https://lottie.host/c501012b-3e88-4fbd-9caf-b4480a704d89/qsHm55I3lw.json"
 img_ib_logo = Image.open("images/IB_Logo.png")
 img_cast_ut_logo = Image.open("images/CAST-UT Logo.png")
 
@@ -41,8 +39,6 @@ with st.container():
             - Third Item
             """
         )
-    # with right_column:
-        # st_lottie(lottie_asset1, height=300, key="coding")
 
 # --- Part 3 ---
 with st.container():
